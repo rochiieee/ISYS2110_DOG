@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  width: 100%;
+  min-height: 85px;
+  max-height: 100px;
+  height: 12vh;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid rgb(200, 200, 200);
+}
+.navbar .navbar-left {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+}
+.navbar .navbar-left .link {
+  text-decoration: none;
+}
+.navbar .navbar-left h4 {
+  color: rgb(150, 150, 150);
+}
+.navbar .navbar-left h4:hover {
+  cursor: pointer;
+}
+.navbar .navbar-left span {
+  color: rgb(0, 40, 255);
+}
+.navbar .navbar-left button {
+  display: none;
+}
+.navbar .navbar-right {
+  width: 70%;
+  height: 100%;
+}
+.navbar .navbar-right .navbar-right-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+  margin-left: 50%;
+  margin-right: 10%;
+}
+.navbar .navbar-right .navbar-right-menu .navLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 25%;
+  min-width: 100px;
+  text-decoration: none;
+  color: rgb(150, 150, 150);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.3s ease;
+  border-bottom: 0px solid white;
+}
+.navbar .navbar-right .navbar-right-menu .navLink .leftIcon {
+  margin-right: 7px;
+}
+.navbar .navbar-right .navbar-right-menu .navLink:hover {
+  border-bottom: 2px solid rgb(0, 40, 255);
+  transition: 0.3s ease;
+  color: rgb(0, 40, 255);
+  cursor: pointer;
+}
+.navbar .navbar-right .navbar-right-menu .active {
+  border-bottom: 2px solid rgb(0, 40, 255);
+  color: rgb(0, 40, 255);
+  transition: 0.3s ease;
+}/*# sourceMappingURL=style.css.map */
