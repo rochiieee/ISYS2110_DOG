@@ -90,7 +90,7 @@
 }
 .main .banner {
   height: 70vh;
-  background-image: url("../dogg.png");
+  background-image: url("./dogg.png");
   background-size: cover;
 }
 .main .banner .data {
