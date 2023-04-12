@@ -3,6 +3,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 .navbar {
@@ -58,7 +59,7 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 25%;
+  width: 33%;
   min-width: 100px;
   text-decoration: none;
   color: rgb(150, 150, 150);
@@ -81,4 +82,151 @@
   border-bottom: 2px solid rgb(0, 40, 255);
   color: rgb(0, 40, 255);
   transition: 0.3s ease;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.main .banner {
+  height: 70vh;
+  background-image: url("../dogg.png");
+  background-size: cover;
+}
+.main .banner .data {
+  display: flex;
+  flex-direction: row;
+}
+.main .banner .data .text {
+  width: 50%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 240px;
+  font-family: "Roboto", sans-serif;
+}
+.main .banner .data .text h2 {
+  font-weight: bold;
+  font-size: 50px;
+}
+.main .banner .data .booking {
+  width: 50%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .banner .data .booking button {
+  background-color: rgb(0, 40, 255);
+  padding: 15px 35px 15px 35px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+.main .banner .data .booking button:hover {
+  cursor: pointer;
+}
+.main .trainers {
+  height: 70vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+}
+.main .trainers h1 {
+  font-family: "Roboto", sans-serif;
+}
+.main .trainers .trainer_list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 85%;
+}
+.main .trainers .trainer_list .trainer {
+  border: 1px solid black;
+  height: 50vh;
+  width: 25vw;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .about {
+  height: 35vh;
+  background: rgb(193, 213, 229);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 100px 50px 100px;
+}
+.main .services {
+  height: 80vh;
+  width: 100%;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.main .services .services_list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.main .services .services_list .service {
+  height: 50vh;
+  width: 40vh;
+  margin-right: 3vw;
+}
+.main .services .services_list .service .image {
+  height: 50%;
+  width: 100%;
+  border: 1px solid blue;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .services .services_list .service button {
+  border: none;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  background: rgb(200, 200, 200);
+}
+.main .services .services_list .service h3, .main .services .services_list .service p, .main .services .services_list .service button {
+  margin-top: 10px;
+}
+.main .gallery {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  height: 80vh;
+  padding: 50px 100px 50px 100px;
+}
+.main .gallery .photos {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+.main .gallery .photos .row {
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+  justify-content: space-between;
+}
+.main .gallery .photos .row .photo {
+  width: 280px;
+  height: 220px;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
