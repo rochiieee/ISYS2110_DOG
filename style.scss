@@ -45,7 +45,7 @@
     }
 
     span {
-      color: rgb(0,40,255);
+      color: #225F91;
     }
 
 
@@ -99,17 +99,17 @@
 
 
         &:hover {
-          border-bottom: 2px solid rgb(0,40,255);
+          border-bottom: 2px solid #225F91;
           transition: 0.3s ease;
-          color: rgb(0,40,255);
+          color: #225F91;
           cursor: pointer;
         }
 
       }
 
       .active {
-        border-bottom: 2px solid rgb(0,40,255);
-        color: rgb(0,40,255);
+        border-bottom: 2px solid #225F91;
+        color: #225F91;
         transition: 0.3s ease;
       }
 
@@ -162,7 +162,7 @@
         align-items: center;
 
         button {
-          background-color: rgb(0,40,255);
+          background-color: #225F91;
           padding: 15px 35px 15px 35px;
           border: none;
           border-radius: 5px;
@@ -217,11 +217,12 @@
 
   .about {
     height: 35vh;
-    background: rgb(193,213,229);
+    background: rgb(54, 115, 165);
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 50px 100px 50px 100px;
+
   }
 
   .services {
