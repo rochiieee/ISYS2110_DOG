@@ -1,0 +1,394 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.informationHeader {
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid grey;
+}
+
+.mainprofile {
+  display: flex;
+  flex: row;
+  min-height: 88vh;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.mainprofile .left {
+  width: 25%;
+  min-height: 100%;
+  font-weight: bold;
+}
+.mainprofile .left .yourAccount {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid grey;
+  font-size: 25px;
+  color: rgb(54, 115, 165);
+}
+.mainprofile .left .account,
+.mainprofile .left .subscription,
+.mainprofile .left .billing,
+.mainprofile .left .portfolio,
+.mainprofile .left .settings,
+.mainprofile .left .help,
+.mainprofile .left .logout {
+  height: 40px;
+  padding: 20px 0px 20px 20px;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  transition: 0.3s ease;
+  border-radius: 5px;
+}
+.mainprofile .left .account span,
+.mainprofile .left .subscription span,
+.mainprofile .left .billing span,
+.mainprofile .left .portfolio span,
+.mainprofile .left .settings span,
+.mainprofile .left .help span,
+.mainprofile .left .logout span {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+  font-weight: bold;
+  color: white;
+}
+.mainprofile .left .account .leftIcon,
+.mainprofile .left .subscription .leftIcon,
+.mainprofile .left .billing .leftIcon,
+.mainprofile .left .portfolio .leftIcon,
+.mainprofile .left .settings .leftIcon,
+.mainprofile .left .help .leftIcon,
+.mainprofile .left .logout .leftIcon {
+  margin-right: 8px;
+}
+.mainprofile .left .account:hover, .mainprofile .left .account.active,
+.mainprofile .left .subscription:hover,
+.mainprofile .left .subscription.active,
+.mainprofile .left .billing:hover,
+.mainprofile .left .billing.active,
+.mainprofile .left .portfolio:hover,
+.mainprofile .left .portfolio.active,
+.mainprofile .left .settings:hover,
+.mainprofile .left .settings.active,
+.mainprofile .left .help:hover,
+.mainprofile .left .help.active,
+.mainprofile .left .logout:hover,
+.mainprofile .left .logout.active {
+  border-radius: 5px;
+  background-color: rgb(54, 115, 165);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.mainprofile .left .account:hover > span,
+.mainprofile .left .subscription:hover > span,
+.mainprofile .left .billing:hover > span,
+.mainprofile .left .portfolio:hover > span,
+.mainprofile .left .settings:hover > span,
+.mainprofile .left .help:hover > span,
+.mainprofile .left .logout:hover > span {
+  transition: 0.1s ease;
+}
+.mainprofile .left .line {
+  border: 1px solid grey;
+  height: 1px;
+  width: 100%;
+}
+.mainprofile .right {
+  width: 75%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.mainprofile .right .header {
+  height: 65px;
+  border-bottom: 2px solid grey;
+}
+.mainprofile .right .header .headerBod {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(54, 115, 165);
+}
+.mainprofile .right .mainbod {
+  min-height: 90%;
+  height: 100%;
+}
+.mainprofile .right .mainbod .account,
+.mainprofile .right .mainbod .subscription {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+.mainprofile .right .mainbod .account .accountInformation,
+.mainprofile .right .mainbod .account .subscriptionInformation,
+.mainprofile .right .mainbod .subscription .accountInformation,
+.mainprofile .right .mainbod .subscription .subscriptionInformation {
+  width: 40%;
+  height: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 20px;
+}
+.mainprofile .right .mainbod .account .accountInformation .informationHeader,
+.mainprofile .right .mainbod .account .subscriptionInformation .informationHeader,
+.mainprofile .right .mainbod .subscription .accountInformation .informationHeader,
+.mainprofile .right .mainbod .subscription .subscriptionInformation .informationHeader {
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid grey;
+}
+.mainprofile .right .mainbod .account .accountInformation p,
+.mainprofile .right .mainbod .account .subscriptionInformation p,
+.mainprofile .right .mainbod .subscription .accountInformation p,
+.mainprofile .right .mainbod .subscription .subscriptionInformation p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.mainprofile .right .mainbod .account .accountInformation p #one,
+.mainprofile .right .mainbod .account .subscriptionInformation p #one,
+.mainprofile .right .mainbod .subscription .accountInformation p #one,
+.mainprofile .right .mainbod .subscription .subscriptionInformation p #one {
+  color: grey;
+  font-weight: bold;
+}
+.mainprofile .right .mainbod .account .accountInformation p #two,
+.mainprofile .right .mainbod .account .subscriptionInformation p #two,
+.mainprofile .right .mainbod .subscription .accountInformation p #two,
+.mainprofile .right .mainbod .subscription .subscriptionInformation p #two {
+  color: rgb(54, 115, 165);
+  font-weight: bold;
+}
+.mainprofile .right .mainbod .account .accountInformation button,
+.mainprofile .right .mainbod .account .subscriptionInformation button,
+.mainprofile .right .mainbod .subscription .accountInformation button,
+.mainprofile .right .mainbod .subscription .subscriptionInformation button {
+  border: none;
+  background: rgb(54, 115, 165);
+  border-radius: 5px;
+  height: 35px;
+  width: 50%;
+  color: white;
+  font-weight: bold;
+}
+.mainprofile .right .mainbod .account .accountInformation button:hover,
+.mainprofile .right .mainbod .account .subscriptionInformation button:hover,
+.mainprofile .right .mainbod .subscription .accountInformation button:hover,
+.mainprofile .right .mainbod .subscription .subscriptionInformation button:hover {
+  border: 2px solid black;
+  background: rgb(0, 60, 255);
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.mainprofile .right .mainbod .account .accountInformation .subscriptionOffer,
+.mainprofile .right .mainbod .account .subscriptionInformation .subscriptionOffer,
+.mainprofile .right .mainbod .subscription .accountInformation .subscriptionOffer,
+.mainprofile .right .mainbod .subscription .subscriptionInformation .subscriptionOffer {
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: relative;
+  padding: 10px;
+}
+.mainprofile .right .mainbod .account .accountInformation .subscriptionOffer h2,
+.mainprofile .right .mainbod .account .subscriptionInformation .subscriptionOffer h2,
+.mainprofile .right .mainbod .subscription .accountInformation .subscriptionOffer h2,
+.mainprofile .right .mainbod .subscription .subscriptionInformation .subscriptionOffer h2 {
+  font-size: 20px;
+}
+.mainprofile .right .mainbod .account .accountInformation .subscriptionOffer p,
+.mainprofile .right .mainbod .account .subscriptionInformation .subscriptionOffer p,
+.mainprofile .right .mainbod .subscription .accountInformation .subscriptionOffer p,
+.mainprofile .right .mainbod .subscription .subscriptionInformation .subscriptionOffer p {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+.mainprofile .right .mainbod .account .accountInformation .subscriptionOffer span,
+.mainprofile .right .mainbod .account .subscriptionInformation .subscriptionOffer span,
+.mainprofile .right .mainbod .subscription .accountInformation .subscriptionOffer span,
+.mainprofile .right .mainbod .subscription .subscriptionInformation .subscriptionOffer span {
+  color: rgb(54, 115, 165);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+.mainprofile .right .mainbod .account .accountData,
+.mainprofile .right .mainbod .account .subscriptionData,
+.mainprofile .right .mainbod .subscription .accountData,
+.mainprofile .right .mainbod .subscription .subscriptionData {
+  width: 40%;
+  height: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.mainprofile .right .mainbod .account .subscriptionInformation,
+.mainprofile .right .mainbod .subscription .subscriptionInformation {
+  height: 100%;
+}
+.mainprofile .right .mainbod .account .subscriptionInformation button,
+.mainprofile .right .mainbod .subscription .subscriptionInformation button {
+  margin-top: 20px;
+  background-color: rgb(54, 115, 165);
+  color: white;
+  font-weight: bold;
+  width: 100%;
+}
+.mainprofile .right .mainbod .account .subscriptionInformation .cancelSubscription,
+.mainprofile .right .mainbod .subscription .subscriptionInformation .cancelSubscription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+.mainprofile .right .mainbod .account .subscriptionInformation .cancelSubscription:hover,
+.mainprofile .right .mainbod .subscription .subscriptionInformation .cancelSubscription:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: blue;
+}
+.mainprofile .right .mainbod .account .subscriptionData,
+.mainprofile .right .mainbod .subscription .subscriptionData {
+  height: 75%;
+  padding: 20px;
+}
+.mainprofile .right .mainbod .account .subscriptionData .offers,
+.mainprofile .right .mainbod .subscription .subscriptionData .offers {
+  height: 50%;
+  margin-bottom: 20px;
+}
+.mainprofile .right .mainbod .account .subscriptionData .offers .informationHeader,
+.mainprofile .right .mainbod .subscription .subscriptionData .offers .informationHeader {
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid grey;
+}
+.mainprofile .right .mainbod .account .subscriptionData .offers p,
+.mainprofile .right .mainbod .subscription .subscriptionData .offers p {
+  margin: 10px 0px 10px 0px;
+}
+.mainprofile .right .mainbod .subscription {
+  display: flex;
+  flex-direction: column;
+}
+.mainprofile .right .mainbod .subscription .info_and_data {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 600px;
+  margin-bottom: 0px;
+}
+.mainprofile .right .mainbod .subscription .info_and_data .subscriptionInformation {
+  min-height: 450px;
+}
+.mainprofile .right .mainbod .subscription .info_and_data .subscriptionInformation .date {
+  font-weight: bold;
+}
+.mainprofile .right .mainbod .billing {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 100%;
+}
+.mainprofile .right .mainbod .billing .cardDetails {
+  height: 40%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.mainprofile .right .mainbod .billing .cardDetails h2, .mainprofile .right .mainbod .billing .cardDetails p, .mainprofile .right .mainbod .billing .cardDetails button {
+  margin-top: 12px;
+}
+.mainprofile .right .mainbod .billing .cardDetails button {
+  border: none;
+  background: rgb(54, 115, 165);
+  border-radius: 5px;
+  height: 35px;
+  width: 25%;
+  color: white;
+  font-weight: bold;
+}
+.mainprofile .right .mainbod .billing .cardDetails button:hover {
+  background: rgb(0, 60, 255);
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.mainprofile .right .mainbod .billing .transactionHistory {
+  height: 40%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.mainprofile .right .mainbod .billing .transactionHistory .transactionHistoryTable {
+  border: 1px solid black;
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+}
+.mainprofile .right .mainbod .billing .transactionHistory .transactionHistoryTable tr {
+  height: 30px;
+}
+.mainprofile .right .mainbod .portfolio {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  padding-right: 0px;
+  height: 100%;
+  margin-left: 5%;
+}
+.mainprofile .right .mainbod .portfolio .mainTable {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+.mainprofile .right .mainbod .portfolio .mainTable .portfolioTable {
+  height: 100%;
+  border: 1px solid red;
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.mainprofile .right .mainbod .portfolio .mainTable .portfolioTable th {
+  border: 1px solid black;
+  height: 25px;
+  padding: 0px 15px 0px 15px;
+  font-size: 14px;
+}
+.mainprofile .right .mainbod .portfolio .mainTable .portfolioTable td {
+  font-size: 14px;
+  text-align: center;
+}
+.mainprofile .right .mainbod .portfolio .mainTable .profitColumn {
+  height: 100%;
+  border: 1px solid red;
+  display: block;
+  white-space: nowrap;
+}
+.mainprofile .right .mainbod .portfolio .mainTable .profitColumn th {
+  border: 1px solid black;
+  height: 25px;
+  padding: 0px 15px 0px 15px;
+  font-size: 14px;
+}
+.mainprofile .right .mainbod .portfolio .mainTable .profitColumn td {
+  font-size: 14px;
+  text-align: center;
+}/*# sourceMappingURL=profile.css.map */

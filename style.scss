@@ -7,6 +7,11 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 .navbar {
 
   width: 100%;
@@ -77,6 +82,7 @@
         justify-content: center;
         align-items: center;
 
+
         height: 100%;
         width: 33%;
         min-width: 100px;
@@ -92,6 +98,16 @@
         transition: 0.3s ease;
 
         border-bottom: 0px solid white;
+
+        a {
+          text-decoration: none;
+          color: rgb(54, 115, 165);
+        }
+
+        li {
+          text-decoration: none;
+          list-style: none;
+        }
 
         .leftIcon {
           margin-right: 7px;
@@ -313,3 +329,105 @@
 
 
 }
+
+
+
+@import url(https://fonts.bunny.net/css?family=darker-grotesque);
+
+:root {
+    --line-border-color: #225F91;
+    --disabled-line-border: #d1d2d4;
+    --button-active-color: #225F91;
+    --text-color: #868991;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    max-width: 100vw;
+    position: relative;
+    width: 20rem;
+}
+
+.progress-container::before {
+    background-color: var(--disabled-line-border);
+    content: "";
+    height: 0.3rem;
+    left: 0;
+    position: absolute;
+    top: 58%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: -1;
+}
+
+.progress {
+    background-color: var(--line-border-color);
+    height: 0.4rem;
+    left: 0;
+    position: absolute;
+    top: 58%;
+    transform: translateY(-50%);
+    transition: 0.4s ease;
+    width: 0%;
+    z-index: -1;
+}
+
+.circle {
+    align-items: center;
+    background-color: #fff;
+    border: 3px solid var(--disabled-line-border);
+    border-radius: 50%;
+    color: var(--text-color);
+    display: flex;
+    height: 2rem;
+    justify-content: center;
+    transition: 0.4s ease;
+    width: 2rem;
+}
+
+.circle.active {
+    border-color: var(--line-border-color);
+}
+
+.btn:disabled {
+    background-color: var(--disabled-line-border);
+    border-radius: 0.5rem;
+    border: none;
+    color: var(--text-color);
+    cursor: not-allowed;
+    font-size: 0.7rem;
+    margin: 0 0.5rem;
+    padding: 0.75rem 1.25rem;
+}
+
+.btn {
+    background-color: var(--line-border-color);
+    border-radius: 0.5rem;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.7rem;
+    margin: 0 0.5rem;
+    padding: 0.75rem 1.25rem;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+.btn:active {
+    transform: scale(0.9);
+    background-color: var(--button-active-color);
+}
+
+.btn:focus {
+    outline: none;
+}
+

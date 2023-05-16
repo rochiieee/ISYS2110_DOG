@@ -1,0 +1,452 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.informationHeader {
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid grey;
+}
+
+.mainprofile {
+
+    display: flex;
+    flex: row;
+    min-height: 88vh;
+    margin-right: 5%;
+    margin-left: 5%;
+
+    .left {
+        width: 25%;
+        min-height: 100%;
+
+        font-weight: bold;
+
+        .yourAccount {
+            height: 65px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-bottom: 2px solid grey;
+            font-size: 25px;
+            color: rgb(54,115,165);
+        }
+
+        .account,
+        .subscription,
+        .billing,
+        .portfolio,
+        .settings, 
+        .help,
+        .logout {
+            height: 40px;
+            padding: 20px 0px 20px 20px;
+            display: flex;
+            align-items: center;
+            margin: 10px;
+            transition: 0.3s ease;
+            border-radius: 5px;
+
+            span {
+                display: flex;
+                align-items: center;
+                margin-left: 5px;
+                font-weight: bold;
+                color: white;
+            }
+
+            .leftIcon {
+                margin-right: 8px;
+            }
+
+
+            &:hover,
+            &.active {
+                border-radius: 5px;
+                background-color: rgb(54,115,165);
+                color: white;
+                cursor: pointer;
+                transition: 0.3s ease;
+                
+            }
+
+            &:hover > span {
+                transition: 0.1s ease;
+            }
+
+
+        }
+
+        .line {
+            border: 1px solid grey;
+            height: 1px;
+            width: 100%;
+        }
+
+
+
+
+    }
+
+    .right {
+        width: 75%;
+        min-height: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        .header {
+            height: 65px;
+            border-bottom: 2px solid grey;
+
+            .headerBod {
+                height: 65px;
+    
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                font-size: 25px;
+                font-weight: bold;
+                color: rgb(54,115,165);
+            }
+
+        }
+
+        .mainbod {
+            min-height: 90%;
+            height: 100%;
+    
+            .account,
+            .subscription {
+                display: flex;
+                flex-direction: row;
+                height: 100%;
+                     
+                .accountInformation,
+                .subscriptionInformation {
+                    width: 40%;
+                    height: 100%;
+
+                    margin-left: 5%;
+                    margin-right: 5%;
+
+
+                    padding: 20px;
+
+
+                    .informationHeader {
+                        font-size: 26px;
+                        display: flex;
+                        align-items: center;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        border-bottom: 1px solid grey;
+                    }
+
+                    p {
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+
+                        #one {
+                            color: grey;
+                            font-weight: bold;
+                        }
+
+                        #two {
+                            color: rgb(54,115,165);
+                            font-weight: bold;
+                        }
+
+                    }
+
+                    button {
+                        border: none;
+                        background: rgb(54,115,165);
+                        border-radius: 5px;
+
+                        height: 35px;
+                        width: 50%;
+
+                        color: white;
+                        font-weight: bold;
+
+                        &:hover {
+                            border: 2px solid black;
+                            background: rgb(0,60,255);
+                            transition: 0.2s ease;
+                            cursor: pointer;
+                        }
+
+                    }
+
+                    .subscriptionOffer {
+                        border: 1px solid grey;
+                        border-radius: 5px;
+                        height: relative;
+
+                        padding: 10px;
+
+                        h2 {
+                            font-size: 20px;
+                        }
+
+                        p {
+                            font-size: 15px;
+                            display: flex;
+                            align-items: center;
+                        }
+
+                        span {
+                            color: rgb(54,115,165);
+                            font-size: 20px;
+                            display: flex;
+                            align-items: center;
+                            margin-right: 5px;
+                        }
+
+
+
+                    }
+
+
+
+
+                }
+                
+                .accountData,
+                .subscriptionData {
+                    width: 40%;
+                    height: 100%;
+
+                    margin-left: 5%;
+                    margin-right: 5%;
+
+                    // border: 1px solid black;
+                }
+
+                
+                .subscriptionInformation {
+                    height: 100%;
+
+
+                    button {
+                        margin-top: 20px;
+                        background-color: rgb(54,115,165);
+                        color: white;
+                        font-weight: bold;
+                        width: 100%;
+                    }
+
+                    .cancelSubscription {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 12px;
+
+                        &:hover {
+                            cursor: pointer;
+                            text-decoration: underline;
+                            color: blue;
+                        }
+
+                    }
+
+                }
+
+                .subscriptionData {
+                    height: 75%;
+                    padding: 20px;
+
+                    .offers {
+                        height: 50%;
+                        margin-bottom: 20px;
+
+
+                        .informationHeader {
+                            font-size: 26px;
+                            display: flex;
+                            align-items: center;
+                            padding-top: 5px;
+                            padding-bottom: 5px;
+                            border-bottom: 1px solid grey;
+                        }
+
+                        p {
+                            margin: 10px 0px 10px 0px;
+                        }
+
+                    }
+
+                }
+     
+
+            }
+
+            .subscription {
+                display: flex;
+                flex-direction: column;
+
+                .info_and_data {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    height: 600px;
+                    margin-bottom: 0px;
+
+                    .subscriptionInformation {
+                        min-height: 450px;
+
+                        .date {
+                            font-weight: bold;
+                            
+                        }
+
+
+                    }
+
+
+                }
+
+            }
+
+            .billing {
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                height: 100%;
+
+
+                .cardDetails {
+                    height: 40%;
+                    margin-left: 5%;
+                    margin-right: 5%;
+
+                    h2, p, button {
+                        margin-top: 12px;
+                    }
+                    
+                    button {
+                        border: none;
+                        background: rgb(54,115,165);
+                        border-radius: 5px;
+
+                        height: 35px;
+                        width: 25%;
+
+                        color: white;
+                        font-weight: bold;
+
+                        &:hover {
+                            background: rgb(0,60,255);
+                            transition: 0.2s ease;
+                            cursor: pointer;
+                        }
+
+                    }
+
+                }
+
+                .transactionHistory {
+                    height: 40%;
+                    margin-left: 5%;
+                    margin-right: 5%;
+
+                    .transactionHistoryTable {
+                        border: 1px solid black;
+                        width: 100%;
+                        text-align: center;
+                        margin-top: 15px;
+
+                        tr {
+                            height: 30px;
+                        }
+
+                    }
+
+
+
+                }
+
+            }
+
+
+            .portfolio {
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                padding-right: 0px;
+                height: 100%;
+                margin-left: 5%;
+
+                .mainTable {
+                    display: flex;
+                    flex-direction: row;
+                    height: 100%;
+
+                    .portfolioTable {
+                        height: 100%;
+                        border: 1px solid red;
+                        display: block;
+                        overflow-x: auto;
+                        white-space: nowrap;
+
+                        th {
+                            border: 1px solid black;
+                            height: 25px;
+                            padding: 0px 15px 0px 15px;
+                            font-size: 14px;
+                        }
+
+                        td {
+                            font-size: 14px;
+                            text-align: center;
+                        }
+
+
+                    }
+
+                    .profitColumn {
+                        height: 100%;
+                        // width: 200px;
+                        border: 1px solid red;
+                        display: block;
+                        white-space: nowrap;
+
+
+                        th {
+                            border: 1px solid black;
+                            height: 25px;
+                            padding: 0px 15px 0px 15px;
+                            font-size: 14px;
+                        }
+
+                        td {
+                            font-size: 14px;
+                            text-align: center;
+                        }
+                      
+
+
+                    }
+
+
+
+                }
+
+
+            }
+
+
+        }
+
+    }
+}
