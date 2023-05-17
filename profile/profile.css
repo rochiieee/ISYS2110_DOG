@@ -174,8 +174,8 @@ body {
 .mainprofile .right .mainbod .account .subscriptionInformation p,
 .mainprofile .right .mainbod .subscription .accountInformation p,
 .mainprofile .right .mainbod .subscription .subscriptionInformation p {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .mainprofile .right .mainbod .account .accountInformation p #one,
 .mainprofile .right .mainbod .account .subscriptionInformation p #one,
