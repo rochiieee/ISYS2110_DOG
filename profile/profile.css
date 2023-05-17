@@ -537,7 +537,7 @@ body {
 .mainprofile .right .mainbod .help .submit_enquiry {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 600px;
 }
 .mainprofile .right .mainbod .help .submit_enquiry h3 {
   font-weight: bold;
@@ -548,7 +548,7 @@ body {
   margin-bottom: 5px;
 }
 .mainprofile .right .mainbod .help .submit_enquiry textarea {
-  height: 160px;
+  height: 140px;
   border-radius: 5px;
   padding: 10px;
 }

@@ -153,10 +153,11 @@ body {
     .data {
       display: flex;
       flex-direction: row;
+      height: 600px;
 
       .text {
         width: 50%;
-        height: 70vh;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -174,7 +175,7 @@ body {
 
       .booking {
         width: 50%;
-        height: 70vh;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -189,6 +190,8 @@ body {
 
           &:hover {
             cursor: pointer;
+            background-color: rgb(64,125,165);
+            transition: 0.3s ease;
           }
         }
 
@@ -205,7 +208,7 @@ body {
     flex-direction: column;
     align-items: center;
 
-    padding-top: 25px;
+    padding-top: 30px;
 
     h1 {
       font-family: 'Roboto', sans-serif;
@@ -219,14 +222,44 @@ body {
       width: 85%;
 
       .trainer {
-        border: 1px solid black;
+        border: 3px solid rgb(54,115,165);
         height: 450px;
-        width: 25vw;
+        width: 20vw;
+        min-width: 300px;
         border-radius: 5px;
 
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
+
+        .trainerphoto {
+          height: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-bottom: 2px solid rgb(54, 115, 165);
+        }
+
+        .contents {
+          height: 50%;
+          padding: 20px;
+
+          h3 {
+            border-bottom: 1px solid black;
+            padding: 0px 0px 5px 0px;
+          }
+
+          ul {
+            padding: 0px 20px 0px 20px;
+
+            li {
+              padding: 10px 0px 0px 0px;
+            }
+          }
+
+
+        }
+
+
       }
 
     }
@@ -235,6 +268,7 @@ body {
 
   .about {
     height: 300px;
+    overflow-x: auto;
     background: rgb(54, 115, 165);
     display: flex;
     flex-direction: column;
