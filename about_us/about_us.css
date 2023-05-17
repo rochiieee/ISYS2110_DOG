@@ -77,6 +77,16 @@ h1 {
     margin: 15px 0px 15px 0px;
 }
 
+.person:hover {
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.person:hover > div > i {
+    transition: 0.3s ease;
+    font-size: 60px;
+}
+
 
 
 
