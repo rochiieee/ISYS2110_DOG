@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.mainBody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.logIn {
+  width: 70%;
+  height: 70vh;
+  min-height: 550px;
+  max-height: 600px;
+  min-width: 500px;
+  max-width: 1400px;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 10px;
+  box-shadow: 10px 10px black;
+}
+.logIn .right_half {
+  width: 50%;
+  padding: 5%;
+}
+.logIn .right_half input {
+  padding-left: 10px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+.logIn .right_half .loginKeyword h2 {
+  margin: 0px;
+  margin-bottom: 10px;
+}
+.logIn .right_half .dividerLineFull {
+  background-color: grey;
+  height: 1px;
+  width: 100%;
+}
+.logIn .right_half .inputTitle {
+  padding: 0px;
+  margin: 20px 0px 5px 0px;
+  font-size: 14px;
+}
+.logIn .right_half .first_last_name {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.logIn .right_half .first_last_name .nameInput {
+  min-width: 45%;
+}
+.logIn .right_half .emailLogin,
+.logIn .right_half .passwordLogin {
+  width: 100%;
+}
+.logIn .right_half .loginButton {
+  border: none;
+  background-color: rgb(54, 115, 165);
+  border-radius: 5px;
+  height: 35px;
+  width: 100%;
+  margin: 20px 0px 10px 0px;
+  color: white;
+}
+.logIn .right_half .loginButton:hover {
+  background-color: rgb(64, 125, 175);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.logIn .right_half .failedLogin {
+  color: red;
+  font-size: 12px;
+  padding: 0px;
+  margin: 0px;
+}
+.logIn .right_half .dividerLine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.logIn .right_half .dividerLine .dividerLineThird {
+  background-color: grey;
+  height: 1px;
+  width: 35%;
+}
+.logIn .right_half .dividerLine p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  width: 30%;
+  padding: 0px 10px 0px 10px;
+}
+.logIn .right_half .alternativeSignUp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.logIn .right_half .alternativeSignUp .googleSignUp,
+.logIn .right_half .alternativeSignUp .facebookSignUp {
+  width: 45%;
+  height: 35px;
+  border: 1px solid grey;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logIn .right_half .alternativeSignUp .googleSignUp:hover,
+.logIn .right_half .alternativeSignUp .facebookSignUp:hover {
+  background-color: rgb(220, 220, 220);
+  cursor: pointer;
+}
+.logIn .right_half .alreadyHasAccount {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.logIn .right_half .alreadyHasAccount p {
+  font-size: 13px;
+}
+.logIn .right_half .alreadyHasAccount button {
+  font-size: 13px;
+  border: none;
+  background: none;
+}
+.logIn .right_half .alreadyHasAccount .login {
+  margin-left: 5px;
+  color: rgb(54, 115, 165);
+}
+.logIn .right_half .alreadyHasAccount .login:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.logIn .left_half {
+  width: 50%;
+  background-color: rgb(54, 115, 165);
+  border-radius: 9px 0px 0px 9px;
+}
+
+.signUp {
+  width: 70%;
+  height: 70vh;
+  min-height: 550px;
+  max-height: 600px;
+  min-width: 500px;
+  max-width: 1400px;
+  border: 1px solid grey;
+  box-shadow: -10px 10px black;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+}
+.signUp .left_half {
+  width: 50%;
+  padding: 5%;
+}
+.signUp .left_half input {
+  padding-left: 10px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+.signUp .left_half .signUpKeyword h2 {
+  margin: 0px;
+  margin-bottom: 10px;
+}
+.signUp .left_half .dividerLineFull {
+  background-color: grey;
+  height: 1px;
+  width: 100%;
+}
+.signUp .left_half .inputTitle {
+  padding: 0px;
+  margin: 20px 0px 5px 0px;
+  font-size: 14px;
+}
+.signUp .left_half .first_last_name {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.signUp .left_half .first_last_name .nameInput {
+  min-width: 45%;
+}
+.signUp .left_half .emailInput,
+.signUp .left_half .passwordInput {
+  width: 100%;
+}
+.signUp .left_half .signUpButton {
+  border: none;
+  background-color: rgb(54, 115, 165);
+  border-radius: 5px;
+  height: 35px;
+  width: 100%;
+  margin: 20px 0px 10px 0px;
+  color: white;
+}
+.signUp .left_half .signUpButton:hover {
+  background-color: rgb(64, 125, 175);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.signUp .left_half .dividerLine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.signUp .left_half .dividerLine .dividerLineThird {
+  background-color: grey;
+  height: 1px;
+  width: 35%;
+}
+.signUp .left_half .dividerLine p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  width: 30%;
+  padding: 0px 10px 0px 10px;
+}
+.signUp .left_half .alternativeSignUp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.signUp .left_half .alternativeSignUp .googleSignUp,
+.signUp .left_half .alternativeSignUp .facebookSignUp {
+  width: 45%;
+  height: 35px;
+  border: 1px solid grey;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signUp .left_half .alternativeSignUp .googleSignUp:hover,
+.signUp .left_half .alternativeSignUp .facebookSignUp:hover {
+  background-color: rgb(220, 220, 220);
+  cursor: pointer;
+}
+.signUp .left_half .alreadyHasAccount {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.signUp .left_half .alreadyHasAccount p {
+  font-size: 13px;
+}
+.signUp .left_half .alreadyHasAccount button {
+  font-size: 13px;
+  border: none;
+  background: none;
+}
+.signUp .left_half .alreadyHasAccount .login {
+  margin-left: 5px;
+  color: rgb(54, 115, 165);
+}
+.signUp .left_half .alreadyHasAccount .login:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.signUp .right_half {
+  width: 50%;
+  background-color: rgb(54, 115, 165);
+  border-radius: 0px 9px 9px 0px;
+}
+
+.loader {
+  width: 20px;
+  height: 20px;
+  border: 6px solid #FFF;
+  border-bottom-color: rgb(0, 40, 255);
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.login-with-google-btn {
+  transition: background-color 0.3s, box-shadow 0.3s;
+  padding: 12px 16px 12px 42px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
+  color: #757575;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 12px 11px;
+}
+.login-with-google-btn:hover {
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+.login-with-google-btn:active {
+  background-color: #eeeeee;
+}
+.login-with-google-btn:focus {
+  outline: none;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25), 0 0 0 3px #c8dafc;
+}
+.login-with-google-btn:disabled {
+  filter: grayscale(100%);
+  background-color: #ebebeb;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
+  cursor: not-allowed;
+}/*# sourceMappingURL=loginsignup.css.map */

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./loginsignup.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="navbar">
+                
+        <div class="navbar-left">
+            <div class="link">
+                <a class="navLink"href="../index.html"><img src="../images/title.png" alt="" style="height: 85px;"></a>
+            </div>
+        </div>
+        
+        <div class="navbar-right" id="open-navbar1">
+            <ul class="navbar-right-menu">
+                <a class="navLink"href="../index.html"><li>Home</li></a>
+                <a class="navLink"href="../about_us/about_us.html"><li>About Us</li></a>
+                <a class="navLink" href="../logsign/signup.html">Sign Up</a>
+                <a class="navLink active" href="../logsign/login.html">Login</a>
+                <a class="navLink"href="../profile/profile.html"><li>Profile</li></a>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mainBody">
+        <div class="logIn">
+            <div class="left_half"></div>
+            <div class="right_half">
+
+                <div class='loginKeyword'>
+                    <h2>Log In</h2>
+                </div>
+
+                <div class="dividerLineFull"></div>
+
+                <div class='inputTitle'>Email</div>
+                <input type="text" class="emailLogin" placeholder='Email Address'></input>
+
+                <div class='inputTitle'>Password</div>
+                <input type="password" class="passwordLogin" placeholder='Password'></input>
+
+                <button class="loginButton" id="loginButton">Log In</button>
+
+                <div class="dividerLine">
+                    <div class="dividerLineThird"></div>
+                    <p>Or Sign In With</p>
+                    <div class="dividerLineThird"></div>
+                </div>
+
+                <div class="alternativeSignUp">
+                <button type="button" class="login-with-google-btn"onClick={handleSignInGoogle}>
+                    Sign in with Google
+                </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>

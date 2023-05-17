@@ -33,9 +33,14 @@
   justify-content: center;
   border-bottom: 2px solid grey;
   font-size: 25px;
-  color: rgb(54, 115, 165);
+  color: rgb(64, 125, 175);
+}
+.mainprofile .left a {
+  text-decoration: none;
+  color: black;
 }
 .mainprofile .left .account,
+.mainprofile .left .dogprofile,
 .mainprofile .left .subscription,
 .mainprofile .left .billing,
 .mainprofile .left .portfolio,
@@ -51,6 +56,7 @@
   border-radius: 5px;
 }
 .mainprofile .left .account span,
+.mainprofile .left .dogprofile span,
 .mainprofile .left .subscription span,
 .mainprofile .left .billing span,
 .mainprofile .left .portfolio span,
@@ -64,6 +70,7 @@
   color: white;
 }
 .mainprofile .left .account .leftIcon,
+.mainprofile .left .dogprofile .leftIcon,
 .mainprofile .left .subscription .leftIcon,
 .mainprofile .left .billing .leftIcon,
 .mainprofile .left .portfolio .leftIcon,
@@ -73,6 +80,8 @@
   margin-right: 8px;
 }
 .mainprofile .left .account:hover, .mainprofile .left .account.active,
+.mainprofile .left .dogprofile:hover,
+.mainprofile .left .dogprofile.active,
 .mainprofile .left .subscription:hover,
 .mainprofile .left .subscription.active,
 .mainprofile .left .billing:hover,
@@ -86,12 +95,13 @@
 .mainprofile .left .logout:hover,
 .mainprofile .left .logout.active {
   border-radius: 5px;
-  background-color: rgb(54, 115, 165);
+  background-color: rgb(64, 125, 175);
   color: white;
   cursor: pointer;
   transition: 0.3s ease;
 }
 .mainprofile .left .account:hover > span,
+.mainprofile .left .dogprofile:hover > span,
 .mainprofile .left .subscription:hover > span,
 .mainprofile .left .billing:hover > span,
 .mainprofile .left .portfolio:hover > span,
@@ -122,7 +132,7 @@
   justify-content: center;
   font-size: 25px;
   font-weight: bold;
-  color: rgb(54, 115, 165);
+  color: rgb(64, 125, 175);
 }
 .mainprofile .right .mainbod {
   min-height: 90%;
@@ -173,7 +183,7 @@
 .mainprofile .right .mainbod .account .subscriptionInformation p #two,
 .mainprofile .right .mainbod .subscription .accountInformation p #two,
 .mainprofile .right .mainbod .subscription .subscriptionInformation p #two {
-  color: rgb(54, 115, 165);
+  color: rgb(64, 125, 175);
   font-weight: bold;
 }
 .mainprofile .right .mainbod .account .accountInformation button,
@@ -181,7 +191,7 @@
 .mainprofile .right .mainbod .subscription .accountInformation button,
 .mainprofile .right .mainbod .subscription .subscriptionInformation button {
   border: none;
-  background: rgb(54, 115, 165);
+  background: rgb(64, 125, 175);
   border-radius: 5px;
   height: 35px;
   width: 50%;
@@ -192,8 +202,7 @@
 .mainprofile .right .mainbod .account .subscriptionInformation button:hover,
 .mainprofile .right .mainbod .subscription .accountInformation button:hover,
 .mainprofile .right .mainbod .subscription .subscriptionInformation button:hover {
-  border: 2px solid black;
-  background: rgb(0, 60, 255);
+  background: rgb(54, 125, 175);
   transition: 0.2s ease;
   cursor: pointer;
 }
@@ -224,7 +233,7 @@
 .mainprofile .right .mainbod .account .subscriptionInformation .subscriptionOffer span,
 .mainprofile .right .mainbod .subscription .accountInformation .subscriptionOffer span,
 .mainprofile .right .mainbod .subscription .subscriptionInformation .subscriptionOffer span {
-  color: rgb(54, 115, 165);
+  color: rgb(64, 125, 175);
   font-size: 20px;
   display: flex;
   align-items: center;
@@ -246,7 +255,7 @@
 .mainprofile .right .mainbod .account .subscriptionInformation button,
 .mainprofile .right .mainbod .subscription .subscriptionInformation button {
   margin-top: 20px;
-  background-color: rgb(54, 115, 165);
+  background-color: rgb(64, 125, 175);
   color: white;
   font-weight: bold;
   width: 100%;
@@ -320,7 +329,7 @@
 }
 .mainprofile .right .mainbod .billing .cardDetails button {
   border: none;
-  background: rgb(54, 115, 165);
+  background: rgb(64, 125, 175);
   border-radius: 5px;
   height: 35px;
   width: 25%;
@@ -391,4 +400,78 @@
 .mainprofile .right .mainbod .portfolio .mainTable .profitColumn td {
   font-size: 14px;
   text-align: center;
+}
+.mainprofile .right .mainbod .dogprofiles {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  padding-right: 0px;
+  height: 100%;
+  margin-left: 5%;
+}
+.mainprofile .right .mainbod .dogprofiles .dogprofile {
+  border: 3px solid rgb(54, 125, 175);
+  border-radius: 5px;
+  height: 450px;
+  width: 350px;
+  margin: 0px 50px 0px 0px;
+}
+.mainprofile .right .mainbod .dogprofiles .dogprofile .top {
+  height: 40%;
+  border-radius: 2px 2px 0px 0px;
+  background-size: cover;
+}
+.mainprofile .right .mainbod .dogprofiles .dogprofile .top1 {
+  background-image: url("../images/dogprofile.png");
+}
+.mainprofile .right .mainbod .dogprofiles .dogprofile .top2 {
+  background-image: url("../images/dogprofile2.png");
+}
+.mainprofile .right .mainbod .dogprofiles .dogprofile .bottom {
+  height: 60%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.mainprofile .right .mainbod .dogprofiles .dogprofile .bottom h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.mainprofile .right .mainbod .dogprofiles .dogprofile .bottom p {
+  margin: 10px 0px 10px 0px;
+}
+.mainprofile .right .mainbod .dogprofiles .dogprofile .bottom a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: rgb(54, 125, 175);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  height: 30px;
+  margin-top: 10px;
+}
+.mainprofile .right .mainbod .dogprofiles .dogprofile .bottom a:hover {
+  background-color: rgb(74, 135, 185);
+  cursor: pointer;
+}
+.mainprofile .right .mainbod .dogprofiles .add_dog_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  width: 350px;
+}
+.mainprofile .right .mainbod .dogprofiles .add_dog_button button {
+  background-color: rgb(54, 125, 175);
+  width: 200px;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+.mainprofile .right .mainbod .dogprofiles .add_dog_button button:hover {
+  cursor: pointer;
+  background-color: rgb(74, 135, 185);
 }/*# sourceMappingURL=profile.css.map */
