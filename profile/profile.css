@@ -14,12 +14,17 @@
   border-bottom: 1px solid grey;
 }
 
+body {
+  background: white;
+}
+
 .mainprofile {
   display: flex;
   flex: row;
-  min-height: 88vh;
-  margin-right: 5%;
-  margin-left: 5%;
+  min-height: 91vh;
+  padding-right: 5%;
+  padding-left: 5%;
+  background: white;
 }
 .mainprofile .left {
   width: 25%;
@@ -433,6 +438,20 @@
   display: flex;
   flex-direction: column;
 }
+.mainprofile .right .mainbod .dogprofiles .dogprofile .bottom .names {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.mainprofile .right .mainbod .dogprofiles .dogprofile .bottom .names button {
+  height: 25px;
+  width: 50px;
+  background-color: rgb(54, 125, 175);
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
 .mainprofile .right .mainbod .dogprofiles .dogprofile .bottom h3 {
   font-size: 20px;
   margin-bottom: 20px;
@@ -474,4 +493,70 @@
 .mainprofile .right .mainbod .dogprofiles .add_dog_button button:hover {
   cursor: pointer;
   background-color: rgb(74, 135, 185);
+}
+.mainprofile .right .mainbod .help {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.mainprofile .right .mainbod .help h2 {
+  color: rgb(54, 125, 175);
+  margin-bottom: 25px;
+}
+.mainprofile .right .mainbod .help .faq {
+  width: 90%;
+  height: 80px;
+  border: 3px solid rgb(200, 200, 200);
+  border-radius: 8px;
+  margin-bottom: 35px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mainprofile .right .mainbod .help .faq h4 {
+  color: rgb(54, 125, 175);
+  font-weight: bold;
+  font-size: 18px;
+}
+.mainprofile .right .mainbod .help .faq p {
+  margin-top: 5px;
+  color: black;
+}
+.mainprofile .right .mainbod .help .viewmore {
+  margin-bottom: 20px;
+  background-color: rgb(54, 125, 175);
+  color: white;
+  padding: 10px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+}
+.mainprofile .right .mainbod .help .submit_enquiry {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+.mainprofile .right .mainbod .help .submit_enquiry h3 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.mainprofile .right .mainbod .help .submit_enquiry p {
+  margin-bottom: 5px;
+}
+.mainprofile .right .mainbod .help .submit_enquiry textarea {
+  height: 160px;
+  border-radius: 5px;
+  padding: 10px;
+}
+.mainprofile .right .mainbod .help .submit_enquiry button {
+  margin-top: 20px;
+  background-color: rgb(54, 125, 175);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
 }/*# sourceMappingURL=profile.css.map */

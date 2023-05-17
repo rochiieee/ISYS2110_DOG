@@ -10,6 +10,7 @@
 body {
   display: flex;
   flex-direction: column;
+  background-color: rgb(54, 115, 165);
 }
 
 .navbar {
@@ -19,6 +20,7 @@ body {
   height: 12vh;
   display: flex;
   flex-direction: row;
+  background-color: white;
   border-bottom: 1px solid rgb(200, 200, 200);
 }
 .navbar .navbar-left {
@@ -103,7 +105,7 @@ body {
   flex-direction: column;
 }
 .main .banner {
-  height: 70vh;
+  height: 600px;
   background-image: url("./dogg.png");
   background-size: cover;
 }
@@ -143,7 +145,7 @@ body {
   cursor: pointer;
 }
 .main .trainers {
-  height: 70vh;
+  height: 600px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -162,7 +164,7 @@ body {
 }
 .main .trainers .trainer_list .trainer {
   border: 1px solid black;
-  height: 50vh;
+  height: 450px;
   width: 25vw;
   border-radius: 5px;
   display: flex;
@@ -170,7 +172,7 @@ body {
   align-items: center;
 }
 .main .about {
-  height: 35vh;
+  height: 300px;
   background: rgb(54, 115, 165);
   display: flex;
   flex-direction: column;
@@ -178,9 +180,10 @@ body {
   padding: 50px 100px 50px 100px;
 }
 .main .services {
-  height: 80vh;
+  height: 700px;
   width: 100%;
   padding: 100px;
+  background-color: white;
   display: flex;
   flex-direction: column;
 }
@@ -192,8 +195,8 @@ body {
   margin-top: 15px;
 }
 .main .services .services_list .service {
-  height: 50vh;
-  width: 40vh;
+  height: 450px;
+  width: 40vw;
   margin-right: 3vw;
 }
 .main .services .services_list .service .image {
@@ -217,8 +220,9 @@ body {
 .main .gallery {
   display: flex;
   flex-direction: column;
-  height: 80vh;
+  height: 700px;
   padding: 50px 100px 50px 100px;
+  background-color: white;
 }
 .main .gallery .photos {
   margin-top: 15px;
@@ -341,7 +345,7 @@ body {
 }
 
 .footer {
-  height: 50vh;
+  height: 500px;
   background-color: rgb(54, 115, 165);
   width: 100%;
 }
@@ -350,9 +354,10 @@ body {
   border-bottom: 1px solid white;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0px 0px 0px 100px;
+  padding: 0px 150px 0px 150px;
 }
 .footer .subscribe h1, .footer .subscribe p {
   color: white;
@@ -399,8 +404,8 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding-left: 7%;
+  padding-top: 20px;
 }
 .footer .companydetails .leftinfo h3 {
   font-size: 35px;
@@ -430,13 +435,34 @@ body {
   font-size: 16px;
   margin: 15px 0px 15px 0px;
   font-weight: bold;
+  color: white;
 }
 .footer .companydetails .contents .column p a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 .footer .companydetails .contents .column p a:hover {
-  color: white;
   cursor: pointer;
   transition: 0.3s ease;
+}
+.footer .companydetails .contents .column textarea {
+  width: 19vw;
+  height: 15vh;
+  background-color: rgb(34, 95, 145);
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+.footer .companydetails .contents .column button {
+  width: 150px;
+  height: 30px;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
+.footer .companydetails .contents .column button:hover {
+  cursor: pointer;
+  background-color: rgb(220, 220, 220);
 }/*# sourceMappingURL=style.css.map */
