@@ -217,7 +217,6 @@ body {
 .main .gallery {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
   height: 80vh;
   padding: 50px 100px 50px 100px;
 }
@@ -339,4 +338,101 @@ body {
 
 .btn:focus {
   outline: none;
+}
+
+.footer {
+  height: 50vh;
+  background-color: rgb(54, 115, 165);
+  width: 100%;
+}
+.footer .subscribe {
+  height: 12vh;
+  border-bottom: 1px solid white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 0px 0px 0px 100px;
+}
+.footer .subscribe h1, .footer .subscribe p {
+  color: white;
+  margin-right: 100px;
+}
+.footer .subscribe input {
+  width: 300px;
+  height: 35px;
+  border: 1px solid white;
+  border-radius: 4px;
+  background-color: rgb(54, 115, 165);
+  color: white;
+  padding: 0px 0px 0px 15px;
+}
+.footer .subscribe input::-moz-placeholder {
+  color: white;
+  opacity: 1;
+}
+.footer .subscribe input::placeholder {
+  color: white;
+  opacity: 1;
+}
+.footer .subscribe button {
+  width: 150px;
+  height: 35px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  margin-left: 20px;
+}
+.footer .subscribe button:hover {
+  background-color: rgb(220, 220, 220);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.footer .companydetails {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 38vh;
+}
+.footer .companydetails .leftinfo {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .companydetails .leftinfo h3 {
+  font-size: 35px;
+  color: white;
+}
+.footer .companydetails .leftinfo p {
+  color: white;
+  margin-top: 25px;
+}
+.footer .companydetails .contents {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+.footer .companydetails .contents .column {
+  width: 30%;
+  padding: 20px;
+}
+.footer .companydetails .contents .column h4 {
+  font-size: 25px;
+  color: white;
+  padding: 0px 0px 10px 0px;
+  border-bottom: 1px solid white;
+}
+.footer .companydetails .contents .column p {
+  font-size: 16px;
+  margin: 15px 0px 15px 0px;
+  font-weight: bold;
+}
+.footer .companydetails .contents .column p:hover {
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
 }/*# sourceMappingURL=style.css.map */
