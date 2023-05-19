@@ -5,8 +5,8 @@ body{
 
 .container {
     width: 100%;
-    height: 100%;
-    padding: 100px;
+    height: 80vh;
+    /* padding: 50px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,9 +47,20 @@ p {
     color: white;
 }
 
+.returnhome,
+.placebooking {
+    background-color: rgb(54,115,165);
+}
+
 .returnhome:hover,
 .placebooking:hover {
     cursor: pointer;
     transition: 0.3s ease;
-    background-color: rgb(64, 125, 175);
+    background-color: rgb(84, 145, 195);
+}
+
+.returnhome:active,
+.placebooking:active {
+    transform: scale(0.90);
+    transition: 0.3s ease;
 }

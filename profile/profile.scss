@@ -509,6 +509,12 @@ body {
                                 border: none;
                                 border-radius: 4px;
                                 color: white;
+
+                                &:hover {
+                                    cursor: pointer;
+                                    background-color: rgb(74, 135, 185);
+                                    transition: 0.3s ease;
+                                }
                             }
                         }
 
