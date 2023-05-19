@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
-@import url(https://fonts.bunny.net/css?family=darker-grotesque);
 * {
   box-sizing: border-box;
   padding: 0;
@@ -11,6 +10,15 @@ body {
   display: flex;
   flex-direction: column;
   background-color: rgb(54, 115, 165);
+}
+
+button:active {
+  transform: scale(0.95);
+  transition: 0.2s ease;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .navbar {
@@ -372,6 +380,7 @@ body {
 }
 .main .prices {
   height: 600px;
+  width: 100%;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -427,16 +436,18 @@ body {
 }
 
 .container {
+  width: 100%;
+  height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  padding: 0;
+  margin: 0;
 }
 
 .progress-container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   max-width: 100vw;
   position: relative;
   width: 20rem;
@@ -447,7 +458,7 @@ body {
   height: 0.4rem;
   left: 0;
   position: absolute;
-  top: 58%;
+  top: 50%;
   transform: translateY(-50%);
   transition: 0.4s ease;
   width: 0%;
