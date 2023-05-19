@@ -15,12 +15,13 @@ body {
 
 .navbar {
   width: 100%;
-  min-height: 85px;
+  min-height: 95px;
   max-height: 100px;
   height: 12vh;
   display: flex;
   flex-direction: row;
   background-color: white;
+  justify-content: space-between;
   border-bottom: 1px solid rgb(200, 200, 200);
 }
 .navbar .navbar-left {
@@ -49,7 +50,7 @@ body {
   display: none;
 }
 .navbar .navbar-right {
-  width: 70%;
+  width: 45%;
   height: 100%;
 }
 .navbar .navbar-right .navbar-right-menu {
@@ -57,17 +58,14 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 40%;
   height: 100%;
-  margin-left: 50%;
-  margin-right: 10%;
 }
 .navbar .navbar-right .navbar-right-menu .navLink {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 33%;
+  width: 20%;
   min-width: 100px;
   text-decoration: none;
   color: rgb(150, 150, 150);
@@ -163,7 +161,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 85%;
+  width: 100%;
+  padding: 0px 50px 0px 50px;
 }
 .main .trainers .trainer_list .trainer {
   border: 3px solid rgb(54, 115, 165);
@@ -194,6 +193,25 @@ body {
 .main .trainers .trainer_list .trainer .contents ul li {
   padding: 10px 0px 0px 0px;
 }
+.main .trainers .trainer_list .arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .trainers .trainer_list .arrow p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100vh;
+  height: 30px;
+  width: 30px;
+  background-color: rgb(150, 150, 150);
+}
+.main .trainers .trainer_list .arrow p:hover {
+  cursor: pointer;
+  background: rgb(200, 200, 200);
+  transition: 0.3s ease;
+}
 .main .about {
   height: 300px;
   overflow-x: auto;
@@ -204,12 +222,14 @@ body {
   padding: 50px 100px 50px 100px;
 }
 .main .services {
-  height: 700px;
+  height: 1050px;
   width: 100%;
-  padding: 100px;
+  padding: 0px 100px 0px 100px;
   background-color: white;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .main .services .services_list {
   display: flex;
@@ -240,6 +260,36 @@ body {
 }
 .main .services .services_list .service h3, .main .services .services_list .service p, .main .services .services_list .service button {
   margin-top: 10px;
+}
+.main .otherinformation {
+  height: 600px;
+  background: rgb(54, 115, 165);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 50px 100px 50px 100px;
+}
+.main .otherinformation .category {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.main .otherinformation .category h2, .main .otherinformation .category li {
+  color: white;
+  margin-bottom: 15px;
+}
+.main .otherinformation .category li {
+  font-size: 18px;
+}
+.main .otherinformation .category h2 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+}
+.main .otherinformation .category .map1 {
+  width: 100%;
+  height: 100%;
 }
 .main .gallery {
   display: flex;
