@@ -369,8 +369,59 @@ body {
   color: white;
 }
 .main .prices {
-  height: 500px;
+  height: 600px;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+.main .prices h2 {
+  color: rgb(54, 115, 165);
+  font-size: 30px;
+}
+.main .prices .pricelist {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 40%;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.main .prices .pricelist .pricecategory {
+  width: 20%;
+  min-width: 200px;
+  margin: 0px 20px 0px 0px;
+  padding: 10px;
+  height: 100%;
+  border: 3px solid rgb(200, 200, 200);
+  border-radius: 8px;
+}
+.main .prices .pricelist h3 {
+  border-bottom: 1px solid rgb(54, 115, 165);
+  padding-bottom: 8px;
+}
+.main .prices .pricelist p {
+  margin-top: 8px;
+}
+.main .prices .subscribe {
+  background-color: rgb(54, 115, 165);
+  width: 550px;
+  height: 50px;
+  margin-top: 25px;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.main .prices .insurance {
+  width: 500px;
+  height: 80px;
+  margin-top: 15px;
+  border: 3px solid rgb(200, 200, 200);
+  border-radius: 4px;
+  padding: 10px;
 }
 
 :root {
@@ -474,7 +525,7 @@ body {
   background-color: rgb(54, 115, 165);
   width: 100%;
 }
-.footer .subscribe {
+.footer .messagesubscribe {
   height: 12vh;
   border-bottom: 1px solid white;
   display: flex;
@@ -484,12 +535,12 @@ body {
   width: 100%;
   padding: 0px 150px 0px 150px;
 }
-.footer .subscribe h1, .footer .subscribe p {
+.footer .messagesubscribe h1, .footer .messagesubscribe p {
   color: white;
   margin-right: 100px;
 }
-.footer .subscribe input {
-  width: 300px;
+.footer .messagesubscribe input {
+  width: 250px;
   height: 35px;
   border: 1px solid white;
   border-radius: 4px;
@@ -497,15 +548,15 @@ body {
   color: white;
   padding: 0px 0px 0px 15px;
 }
-.footer .subscribe input::-moz-placeholder {
+.footer .messagesubscribe input::-moz-placeholder {
   color: white;
   opacity: 1;
 }
-.footer .subscribe input::placeholder {
+.footer .messagesubscribe input::placeholder {
   color: white;
   opacity: 1;
 }
-.footer .subscribe button {
+.footer .messagesubscribe button {
   width: 150px;
   height: 35px;
   background-color: white;
@@ -513,7 +564,7 @@ body {
   border-radius: 4px;
   margin-left: 20px;
 }
-.footer .subscribe button:hover {
+.footer .messagesubscribe button:hover {
   background-color: rgb(220, 220, 220);
   cursor: pointer;
   transition: 0.3s ease;

@@ -267,19 +267,6 @@ body {
   font-weight: bold;
   width: 100%;
 }
-.mainprofile .right .mainbod .account .subscriptionInformation .cancelSubscription,
-.mainprofile .right .mainbod .subscription .subscriptionInformation .cancelSubscription {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 12px;
-}
-.mainprofile .right .mainbod .account .subscriptionInformation .cancelSubscription:hover,
-.mainprofile .right .mainbod .subscription .subscriptionInformation .cancelSubscription:hover {
-  cursor: pointer;
-  text-decoration: underline;
-  color: blue;
-}
 .mainprofile .right .mainbod .account .subscriptionData,
 .mainprofile .right .mainbod .subscription .subscriptionData {
   height: 75%;
