@@ -46,3 +46,10 @@ p {
     border-radius: 5px;
     color: white;
 }
+
+.returnhome:hover,
+.placebooking:hover {
+    cursor: pointer;
+    transition: 0.3s ease;
+    background-color: rgb(64, 125, 175);
+}
