@@ -321,6 +321,56 @@ body {
   justify-content: center;
   align-items: center;
 }
+.main .reviews {
+  height: 300px;
+  background-color: rgb(54, 115, 165);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+.main .reviews button {
+  border: none;
+  background-color: white;
+  width: 100px;
+  height: 30px;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+.main .reviews button:hover {
+  cursor: pointer;
+}
+.main .reviews h2 {
+  color: white;
+}
+.main .reviews .review {
+  min-width: 275px;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 25%;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 50px;
+}
+.main .reviews .review .stars {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 25px;
+}
+.main .reviews .review .stars i {
+  margin-right: 10px;
+}
+.main .reviews .review .message {
+  color: white;
+}
+.main .prices {
+  height: 500px;
+  background-color: white;
+}
 
 :root {
   --line-border-color: #225F91;
