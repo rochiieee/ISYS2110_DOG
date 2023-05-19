@@ -205,11 +205,12 @@ body {
   border-radius: 100vh;
   height: 30px;
   width: 30px;
-  background-color: rgb(150, 150, 150);
+  color: white;
+  background-color: rgb(54, 115, 165);
 }
 .main .trainers .trainer_list .arrow p:hover {
   cursor: pointer;
-  background: rgb(200, 200, 200);
+  background: rgb(64, 125, 165);
   transition: 0.3s ease;
 }
 .main .about {
