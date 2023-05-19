@@ -587,18 +587,6 @@ body {
     width: 20rem;
 }
 
-.progress-container::before {
-    background-color: var(--disabled-line-border);
-    content: "";
-    height: 0.3rem;
-    left: 0;
-    position: absolute;
-    top: 58%;
-    transform: translateY(-50%);
-    width: 100%;
-    z-index: -1;
-}
-
 .progress {
     background-color: var(--line-border-color);
     height: 0.4rem;
