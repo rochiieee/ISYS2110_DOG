@@ -442,6 +442,11 @@ body {
   border-radius: 4px;
   color: white;
 }
+.mainprofile .right .mainbod .dogprofiles .dogprofile .bottom .names button:hover {
+  cursor: pointer;
+  background-color: rgb(74, 135, 185);
+  transition: 0.3s ease;
+}
 .mainprofile .right .mainbod .dogprofiles .dogprofile .bottom h3 {
   font-size: 20px;
   margin-bottom: 20px;
