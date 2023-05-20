@@ -58,7 +58,7 @@ button:hover {
   display: none;
 }
 .navbar .navbar-right {
-  width: 45%;
+  width: 50%;
   height: 100%;
 }
 .navbar .navbar-right .navbar-right-menu {
@@ -257,7 +257,6 @@ button:hover {
 .main .services .services_list .service .image {
   height: 50%;
   width: 100%;
-  border: 1px solid blue;
   border-radius: 5px;
   display: flex;
   justify-content: center;

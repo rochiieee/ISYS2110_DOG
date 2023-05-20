@@ -2,6 +2,10 @@ body {
     background-color: white;
 }
 
+.main {
+    margin-bottom: 125px;
+}
+
 h1 {
     font-family: 'Roboto', sans-serif;
     display: flex;
