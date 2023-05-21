@@ -44,6 +44,7 @@ button:hover {
 }
 .navbar .navbar-left .link {
   text-decoration: none;
+  transform: scale(0.75);
 }
 .navbar .navbar-left h4 {
   color: rgb(150, 150, 150);
